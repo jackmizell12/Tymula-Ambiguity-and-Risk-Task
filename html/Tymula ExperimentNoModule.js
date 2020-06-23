@@ -50,6 +50,9 @@ flowScheduler.add(instruct_5RoutineEnd);
 flowScheduler.add(instruct_6RoutineBegin);
 flowScheduler.add(instruct_6RoutineEachFrame);
 flowScheduler.add(instruct_6RoutineEnd);
+flowScheduler.add(instruct_negRoutineBegin);
+flowScheduler.add(instruct_negRoutineEachFrame);
+flowScheduler.add(instruct_negRoutineEnd);
 flowScheduler.add(instruct_7RoutineBegin);
 flowScheduler.add(instruct_7RoutineEachFrame);
 flowScheduler.add(instruct_7RoutineEnd);
@@ -121,6 +124,10 @@ var instruct_6_keys;
 var instruct_text_11;
 var instruct_text_12;
 var TutArrowTop_3;
+var instruct_negClock;
+var key_resp_2;
+var text;
+var text_2;
 var instruct_7Clock;
 var instruct_7_keys;
 var instruct_text_13;
@@ -147,7 +154,7 @@ function experimentInit() {
   instruct_text_1 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instruct_text_1',
-    text: 'In this task you will be asked to choose between two options.\nOne side will have a constant value and the other will have some chance of two different options.',
+    text: 'In this task you will be asked to choose between two options.\nOne side will have a constant, sure value and the other will have some chance of two different outcomes.',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -173,7 +180,7 @@ function experimentInit() {
   instruct_text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instruct_text_3',
-    text: 'One side will have the constant value shown, 5 in this case.',
+    text: 'One side will have the sure value shown, 5 points in this case.',
     font: 'Arial',
     units : undefined, 
     pos: [0.25, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -362,7 +369,7 @@ function experimentInit() {
   instruct_text_11 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instruct_text_11',
-    text: 'Sometimes a grey bar will obscure the middle of the choice so the exact probabilities of the outcomes are unknown.',
+    text: 'Sometimes a grey bar will obscure the middle of the choice so the exact probabilities of the outcomes are unknown.\nThe bigger the grey bar, the less sure you can be about the chance of each outcome.',
     font: 'Arial',
     units : undefined, 
     pos: [(- 0.25), 0.25], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -390,6 +397,32 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -4.0 
   });
+  // Initialize components for Routine "instruct_neg"
+  instruct_negClock = new util.Clock();
+  key_resp_2 = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  text = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text',
+    text: 'On the trials you have seen in the examples, you can gain points.\nBut there will be other trials where you have to choose between two options where you will lose points.\nThese follow the same rules but will be represented with a negative point number. ',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
+  });
+  
+  text_2 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_2',
+    text: 'Press spacebar to continue',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, (- 0.04)], height: 0.05,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -2.0 
+  });
+  
   // Initialize components for Routine "instruct_7"
   instruct_7Clock = new util.Clock();
   instruct_7_keys = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -397,7 +430,7 @@ function experimentInit() {
   instruct_text_13 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instruct_text_13',
-    text: ' You will get a bonus based on the points you earned from 3 random trials in the game. So choose wisely. you made.\nTo choose between the right and left choices use the right and left arrow keys.\nGood luck!',
+    text: ' You will get a bonus based on the points you earned from 3 random trials in the game (Two positive trials, and 1 negative). So choose wisely.\n\nTo choose between the right and left choices use the respective right and left arrow keys.\n\nGood luck!',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -588,7 +621,7 @@ function instruct_1RoutineEachFrame() {
 
   
   // *instruct_1_keys* updates
-  if (t >= 0.0 && instruct_1_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_1_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_1_keys.tStart = t;  // (not accounting for frame time here)
     instruct_1_keys.frameNStart = frameN;  // exact frame index
@@ -704,7 +737,7 @@ function instruct_2RoutineEachFrame() {
 
   
   // *instruct_2_keys* updates
-  if (t >= 0.0 && instruct_2_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_2_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_2_keys.tStart = t;  // (not accounting for frame time here)
     instruct_2_keys.frameNStart = frameN;  // exact frame index
@@ -818,7 +851,7 @@ function instruct_3RoutineEachFrame() {
 
   
   // *instruct_3_keys* updates
-  if (t >= 0.0 && instruct_3_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_3_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_3_keys.tStart = t;  // (not accounting for frame time here)
     instruct_3_keys.frameNStart = frameN;  // exact frame index
@@ -943,7 +976,7 @@ function instruct_4RoutineEachFrame() {
 
   
   // *instruct_4_keys* updates
-  if (t >= 0.0 && instruct_4_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_4_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_4_keys.tStart = t;  // (not accounting for frame time here)
     instruct_4_keys.frameNStart = frameN;  // exact frame index
@@ -1086,7 +1119,7 @@ function instruct_5RoutineEachFrame() {
 
   
   // *instruct_5_keys* updates
-  if (t >= 0.0 && instruct_5_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_5_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_5_keys.tStart = t;  // (not accounting for frame time here)
     instruct_5_keys.frameNStart = frameN;  // exact frame index
@@ -1228,7 +1261,7 @@ function instruct_6RoutineEachFrame() {
 
   
   // *instruct_6_keys* updates
-  if (t >= 0.0 && instruct_6_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_6_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_6_keys.tStart = t;  // (not accounting for frame time here)
     instruct_6_keys.frameNStart = frameN;  // exact frame index
@@ -1317,6 +1350,128 @@ function instruct_6RoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
+var instruct_negComponents;
+function instruct_negRoutineBegin() {
+  //------Prepare to start Routine 'instruct_neg'-------
+  t = 0;
+  instruct_negClock.reset(); // clock
+  frameN = -1;
+  // update component parameters for each repeat
+  key_resp_2.keys = undefined;
+  key_resp_2.rt = undefined;
+  // keep track of which components have finished
+  instruct_negComponents = [];
+  instruct_negComponents.push(key_resp_2);
+  instruct_negComponents.push(text);
+  instruct_negComponents.push(text_2);
+  
+  instruct_negComponents.forEach( function(thisComponent) {
+    if ('status' in thisComponent)
+      thisComponent.status = PsychoJS.Status.NOT_STARTED;
+     });
+  
+  return Scheduler.Event.NEXT;
+}
+
+
+function instruct_negRoutineEachFrame() {
+  //------Loop for each frame of Routine 'instruct_neg'-------
+  let continueRoutine = true; // until we're told otherwise
+  // get current time
+  t = instruct_negClock.getTime();
+  frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+  // update/draw components on each frame
+  
+  // *key_resp_2* updates
+  if (t >= 0.5 && key_resp_2.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    key_resp_2.tStart = t;  // (not accounting for frame time here)
+    key_resp_2.frameNStart = frameN;  // exact frame index
+    // keyboard checking is just starting
+    psychoJS.window.callOnFlip(function() { key_resp_2.clock.reset(); });  // t=0 on next screen flip
+    psychoJS.window.callOnFlip(function() { key_resp_2.start(); }); // start on screen flip
+    psychoJS.window.callOnFlip(function() { key_resp_2.clearEvents(); });
+  }
+
+  if (key_resp_2.status === PsychoJS.Status.STARTED) {
+    let theseKeys = key_resp_2.getKeys({keyList: ['space'], waitRelease: false});
+    
+    // check for quit:
+    if (theseKeys.length > 0 && theseKeys[0].name === 'escape') {
+      psychoJS.experiment.experimentEnded = true;
+    }
+    
+    if (theseKeys.length > 0) {  // at least one key was pressed
+      key_resp_2.keys = theseKeys[0].name;  // just the last key pressed
+      key_resp_2.rt = theseKeys[0].rt;
+      // a response ends the routine
+      continueRoutine = false;
+    }
+  }
+  
+  
+  // *text* updates
+  if (t >= 0.0 && text.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    text.tStart = t;  // (not accounting for frame time here)
+    text.frameNStart = frameN;  // exact frame index
+    text.setAutoDraw(true);
+  }
+
+  
+  // *text_2* updates
+  if (t >= 0.0 && text_2.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    text_2.tStart = t;  // (not accounting for frame time here)
+    text_2.frameNStart = frameN;  // exact frame index
+    text_2.setAutoDraw(true);
+  }
+
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
+  }
+  
+  // check if the Routine should terminate
+  if (!continueRoutine) {  // a component has requested a forced-end of Routine
+    return Scheduler.Event.NEXT;
+  }
+  
+  continueRoutine = false;  // reverts to True if at least one component still running
+  instruct_negComponents.forEach( function(thisComponent) {
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+      continueRoutine = true;
+    }});
+  
+  // refresh the screen if continuing
+  if (continueRoutine) {
+    return Scheduler.Event.FLIP_REPEAT;
+  }
+  else {
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function instruct_negRoutineEnd() {
+  //------Ending Routine 'instruct_neg'-------
+  instruct_negComponents.forEach( function(thisComponent) {
+    if (typeof thisComponent.setAutoDraw === 'function') {
+      thisComponent.setAutoDraw(false);
+    }});
+  psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
+  if (typeof key_resp_2.keys !== undefined) {  // we had a response
+      psychoJS.experiment.addData('key_resp_2.rt', key_resp_2.rt);
+      routineTimer.reset();
+      }
+  
+  key_resp_2.stop();
+  // the Routine "instruct_neg" was not non-slip safe, so reset the non-slip timer
+  routineTimer.reset();
+  
+  return Scheduler.Event.NEXT;
+}
+
 var instruct_7Components;
 function instruct_7RoutineBegin() {
   //------Prepare to start Routine 'instruct_7'-------
@@ -1350,7 +1505,7 @@ function instruct_7RoutineEachFrame() {
   // update/draw components on each frame
   
   // *instruct_7_keys* updates
-  if (t >= 0.0 && instruct_7_keys.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0.5 && instruct_7_keys.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     instruct_7_keys.tStart = t;  // (not accounting for frame time here)
     instruct_7_keys.frameNStart = frameN;  // exact frame index

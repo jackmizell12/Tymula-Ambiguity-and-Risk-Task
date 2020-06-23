@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on June 23, 2020, at 08:31
+    on June 23, 2020, at 10:04
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,7 +81,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instruct_1"
 instruct_1Clock = core.Clock()
 instruct_text_1 = visual.TextStim(win=win, name='instruct_text_1',
-    text='In this task you will be asked to choose between two options.\nOne side will have a constant value and the other will have some chance of two different options.',
+    text='In this task you will be asked to choose between two options.\nOne side will have a constant, sure value and the other will have some chance of two different outcomes.',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -99,7 +99,7 @@ instruct_1_keys = keyboard.Keyboard()
 # Initialize components for Routine "instruct_2"
 instruct_2Clock = core.Clock()
 instruct_text_3 = visual.TextStim(win=win, name='instruct_text_3',
-    text='One side will have the constant value shown, 5 in this case.',
+    text='One side will have the sure value shown, 5 points in this case.',
     font='Arial',
     pos=(0.25, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -243,7 +243,7 @@ Tutbackdrop_5 = visual.ImageStim(
     texRes=128, interpolate=True, depth=0.0)
 instruct_6_keys = keyboard.Keyboard()
 instruct_text_11 = visual.TextStim(win=win, name='instruct_text_11',
-    text='Sometimes a grey bar will obscure the middle of the choice so the exact probabilities of the outcomes are unknown.',
+    text='Sometimes a grey bar will obscure the middle of the choice so the exact probabilities of the outcomes are unknown.\nThe bigger the grey bar, the less sure you can be about the chance of each outcome.',
     font='Arial',
     pos=(-0.25, 0.25), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -265,11 +265,29 @@ TutArrowTop_3 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
 
+# Initialize components for Routine "instruct_neg"
+instruct_negClock = core.Clock()
+key_resp_2 = keyboard.Keyboard()
+text = visual.TextStim(win=win, name='text',
+    text='On the trials you have seen in the examples, you can gain points.\nBut there will be other trials where you have to choose between two options where you will lose points.\nThese follow the same rules but will be represented with a negative point number. ',
+    font='Arial',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='Press spacebar to continue',
+    font='Arial',
+    pos=(0, -.04), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+
 # Initialize components for Routine "instruct_7"
 instruct_7Clock = core.Clock()
 instruct_7_keys = keyboard.Keyboard()
 instruct_text_13 = visual.TextStim(win=win, name='instruct_text_13',
-    text=' You will get a bonus based on the points you earned from 3 random trials in the game. So choose wisely. you made.\nTo choose between the right and left choices use the right and left arrow keys.\nGood luck!',
+    text=' You will get a bonus based on the points you earned from 3 random trials in the game (Two positive trials, and 1 negative). So choose wisely.\n\nTo choose between the right and left choices use the respective right and left arrow keys.\n\nGood luck!',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -414,7 +432,7 @@ while continueRoutine:
     
     # *instruct_1_keys* updates
     waitOnFlip = False
-    if instruct_1_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_1_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_1_keys.frameNStart = frameN  # exact frame index
         instruct_1_keys.tStart = t  # local t and not account for scr refresh
@@ -513,7 +531,7 @@ while continueRoutine:
     
     # *instruct_2_keys* updates
     waitOnFlip = False
-    if instruct_2_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_2_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_2_keys.frameNStart = frameN  # exact frame index
         instruct_2_keys.tStart = t  # local t and not account for scr refresh
@@ -612,7 +630,7 @@ while continueRoutine:
     
     # *instruct_3_keys* updates
     waitOnFlip = False
-    if instruct_3_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_3_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_3_keys.frameNStart = frameN  # exact frame index
         instruct_3_keys.tStart = t  # local t and not account for scr refresh
@@ -720,7 +738,7 @@ while continueRoutine:
     
     # *instruct_4_keys* updates
     waitOnFlip = False
-    if instruct_4_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_4_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_4_keys.frameNStart = frameN  # exact frame index
         instruct_4_keys.tStart = t  # local t and not account for scr refresh
@@ -850,7 +868,7 @@ while continueRoutine:
     
     # *instruct_5_keys* updates
     waitOnFlip = False
-    if instruct_5_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_5_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_5_keys.frameNStart = frameN  # exact frame index
         instruct_5_keys.tStart = t  # local t and not account for scr refresh
@@ -980,7 +998,7 @@ while continueRoutine:
     
     # *instruct_6_keys* updates
     waitOnFlip = False
-    if instruct_6_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_6_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_6_keys.frameNStart = frameN  # exact frame index
         instruct_6_keys.tStart = t  # local t and not account for scr refresh
@@ -1059,6 +1077,116 @@ thisExp.addData('TutArrowTop_3.stopped', TutArrowTop_3.tStopRefresh)
 # the Routine "instruct_6" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# ------Prepare to start Routine "instruct_neg"-------
+# update component parameters for each repeat
+key_resp_2.keys = []
+key_resp_2.rt = []
+# keep track of which components have finished
+instruct_negComponents = [key_resp_2, text, text_2]
+for thisComponent in instruct_negComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+instruct_negClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "instruct_neg"-------
+while continueRoutine:
+    # get current time
+    t = instruct_negClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=instruct_negClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *key_resp_2* updates
+    waitOnFlip = False
+    if key_resp_2.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_2.frameNStart = frameN  # exact frame index
+        key_resp_2.tStart = t  # local t and not account for scr refresh
+        key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
+        key_resp_2.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_2.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_2.getKeys(keyList=['space'], waitRelease=False)
+        if len(theseKeys):
+            theseKeys = theseKeys[0]  # at least one key was pressed
+            
+            # check for quit:
+            if "escape" == theseKeys:
+                endExpNow = True
+            key_resp_2.keys = theseKeys.name  # just the last key pressed
+            key_resp_2.rt = theseKeys.rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # *text* updates
+    if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text.frameNStart = frameN  # exact frame index
+        text.tStart = t  # local t and not account for scr refresh
+        text.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+        text.setAutoDraw(True)
+    
+    # *text_2* updates
+    if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.tStart = t  # local t and not account for scr refresh
+        text_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+        text_2.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in instruct_negComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "instruct_neg"-------
+for thisComponent in instruct_negComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if key_resp_2.keys in ['', [], None]:  # No response was made
+    key_resp_2.keys = None
+thisExp.addData('key_resp_2.keys',key_resp_2.keys)
+if key_resp_2.keys != None:  # we had a response
+    thisExp.addData('key_resp_2.rt', key_resp_2.rt)
+thisExp.addData('key_resp_2.started', key_resp_2.tStartRefresh)
+thisExp.addData('key_resp_2.stopped', key_resp_2.tStopRefresh)
+thisExp.nextEntry()
+thisExp.addData('text.started', text.tStartRefresh)
+thisExp.addData('text.stopped', text.tStopRefresh)
+thisExp.addData('text_2.started', text_2.tStartRefresh)
+thisExp.addData('text_2.stopped', text_2.tStopRefresh)
+# the Routine "instruct_neg" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
 # ------Prepare to start Routine "instruct_7"-------
 # update component parameters for each repeat
 instruct_7_keys.keys = []
@@ -1090,7 +1218,7 @@ while continueRoutine:
     
     # *instruct_7_keys* updates
     waitOnFlip = False
-    if instruct_7_keys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if instruct_7_keys.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         instruct_7_keys.frameNStart = frameN  # exact frame index
         instruct_7_keys.tStart = t  # local t and not account for scr refresh

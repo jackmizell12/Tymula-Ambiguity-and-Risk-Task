@@ -1,0 +1,131 @@
+38.6709 	WARNING 	Monitor specification not found. Creating a temporary one...
+42.1076 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001681280B358>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000168129B35F8>, multiSample=False, name='window1', numSamples=2, pos=[628.0, 252.0], screen=0, size=array([1000, 1000]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+42.1078 	EXP 	window1: recordFrameIntervals = False
+42.2721 	EXP 	window1: recordFrameIntervals = True
+42.4564 	EXP 	window1: recordFrameIntervals = False
+43.6847 	EXP 	Created instruct_text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+43.6956 	EXP 	Created instruct_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_2', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+43.7200 	EXP 	Created instruct_text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_3', opacity=1.0, ori=0, pos=array([0.25, 0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+43.7310 	EXP 	Created instruct_text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_4', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+44.1024 	EXP 	Created tut_sure = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='tut_sure', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+44.2181 	EXP 	Created Tutbackdrop = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='TutorialBackground1.png', interpolate=True, mask=None, maskParams=None, name='Tutbackdrop', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.5, 1. ]), texRes=128, units='height', win=Window(...))
+44.2322 	EXP 	Created instruct_text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_5', opacity=1.0, ori=0, pos=array([-0.25,  0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.2391 	EXP 	Created instruct_text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_6', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+44.3119 	EXP 	Created Tutbackdrop_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='TutorialBackground1.png', interpolate=True, mask=None, maskParams=None, name='Tutbackdrop_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.5, 1. ]), texRes=128, units='height', win=Window(...))
+44.3258 	EXP 	Created instruct_text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_7', opacity=1.0, ori=0, pos=array([-0.25,  0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.3326 	EXP 	Created instruct_text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_8', opacity=1.0, ori=0, pos=array([-0.35, -0.4 ]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+44.3386 	EXP 	Created TutArrowTop = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='TutorialArrow.png', interpolate=True, mask=None, maskParams=None, name='TutArrowTop', opacity=1.0, ori=0.0, pos=array([0.15, 0.4 ]), size=array([0.1, 0.1]), texRes=128, units='height', win=Window(...))
+44.3419 	EXP 	Created TutArrowBottom = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='TutorialArrow.png', interpolate=True, mask=None, maskParams=None, name='TutArrowBottom', opacity=1.0, ori=0.0, pos=array([ 0.15, -0.4 ]), size=array([0.1, 0.1]), texRes=128, units='height', win=Window(...))
+44.4596 	EXP 	Created Tutbackdrop_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='TutorialBackground1.png', interpolate=True, mask=None, maskParams=None, name='Tutbackdrop_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.5, 1. ]), texRes=128, units='height', win=Window(...))
+44.4755 	EXP 	Created instruct_text_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_9', opacity=1.0, ori=0, pos=array([-0.25,  0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.4831 	EXP 	Created instruct_text_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_10', opacity=1.0, ori=0, pos=array([-0.35, -0.4 ]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+44.4862 	EXP 	Created TutArrowTop_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='TutorialArrow.png', interpolate=True, mask=None, maskParams=None, name='TutArrowTop_2', opacity=1.0, ori=0.0, pos=array([0.15, 0.28]), size=array([0.1, 0.1]), texRes=128, units='height', win=Window(...))
+44.4894 	EXP 	Created TutArrowBottom_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='TutorialArrow.png', interpolate=True, mask=None, maskParams=None, name='TutArrowBottom_2', opacity=1.0, ori=0.0, pos=array([ 0.15, -0.28]), size=array([0.1, 0.1]), texRes=128, units='height', win=Window(...))
+44.5649 	EXP 	Created Tutbackdrop_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='TutorialBackground2.png', interpolate=True, mask=None, maskParams=None, name='Tutbackdrop_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.5, 1. ]), texRes=128, units='height', win=Window(...))
+44.5967 	EXP 	Created instruct_text_11 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_11', opacity=1.0, ori=0, pos=array([-0.25,  0.25]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.6038 	EXP 	Created instruct_text_12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_12', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+44.6075 	EXP 	Created TutArrowTop_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='TutorialArrow.png', interpolate=True, mask=None, maskParams=None, name='TutArrowTop_3', opacity=1.0, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.1, 0.1]), texRes=128, units='height', win=Window(...))
+44.6455 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.6523 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([ 0.  , -0.04]), rgb=array([255., 255., 255.]), text='Press spacebar to continue', units='height', win=Window(...), wrapWidth=1)
+44.7017 	EXP 	Created instruct_text_13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_13', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.7100 	EXP 	Created instruct_text_14 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct_text_14', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press spacebar, right, or left to continue', units='height', win=Window(...), wrapWidth=1)
+44.7265 	EXP 	Created Red_Square = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([ 1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([ 1., -1., -1.]), interpolate=True, lineColor=array([ 1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([ 1., -1., -1.]), lineWidth=1, name='Red_Square', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+44.7292 	EXP 	Created Blue_Square = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor=array([-1.   ,  0.004,  1.   ]), fillColorSpace='rgb', fillRGB=array([-1.   ,  0.004,  1.   ]), interpolate=True, lineColor=array([-1.   ,  0.004,  1.   ]), lineColorSpace='rgb', lineRGB=array([-1.   ,  0.004,  1.   ]), lineWidth=1, name='Blue_Square', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+44.7384 	EXP 	Created sure = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='sure', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+44.7600 	EXP 	Created or_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='or_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='or', units='height', win=Window(...), wrapWidth=1)
+44.7823 	EXP 	Created Option_One = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='White', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='Option_One', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+44.7894 	EXP 	Created Option_Two = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='White', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='Option_Two', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+44.7971 	EXP 	Created Risk_Text_Top = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='White', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='Risk_Text_Top', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+44.8055 	EXP 	Created Risk_Text_Bottom = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='White', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='Risk_Text_Bottom', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+44.8081 	EXP 	Created Ambiguity_Bar = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-9.0, fillColor=array([0.004, 0.004, 0.004]), fillColorSpace='rgb', fillRGB=array([0.004, 0.004, 0.004]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1, name='Ambiguity_Bar', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+44.8340 	EXP 	Created endscreen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='endscreen_text', opacity=1.0, ori=0, pos=array([0.  , 0.25]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+44.8784 	EXP 	instruct_text_1: autoDraw = True
+44.8784 	EXP 	instruct_text_2: autoDraw = True
+47.5935 	DATA 	Keypress: space
+47.5969 	EXP 	instruct_text_1: autoDraw = False
+47.5969 	EXP 	instruct_text_2: autoDraw = False
+47.5969 	EXP 	tut_sure: pos = array([-0.5,  0. ])
+47.5969 	EXP 	tut_sure: text = '5'
+47.5969 	EXP 	instruct_text_3: autoDraw = True
+47.5969 	EXP 	instruct_text_4: autoDraw = True
+47.5969 	EXP 	tut_sure: autoDraw = True
+48.8863 	DATA 	Keypress: space
+48.8913 	EXP 	instruct_text_3: autoDraw = False
+48.8913 	EXP 	instruct_text_4: autoDraw = False
+48.8913 	EXP 	tut_sure: autoDraw = False
+48.8913 	EXP 	Tutbackdrop: autoDraw = True
+48.8913 	EXP 	instruct_text_5: autoDraw = True
+48.8913 	EXP 	instruct_text_6: autoDraw = True
+49.8746 	DATA 	Keypress: space
+49.8796 	EXP 	Tutbackdrop: autoDraw = False
+49.8796 	EXP 	instruct_text_5: autoDraw = False
+49.8796 	EXP 	instruct_text_6: autoDraw = False
+49.8796 	EXP 	Tutbackdrop_2: autoDraw = True
+49.8796 	EXP 	instruct_text_7: autoDraw = True
+49.8796 	EXP 	instruct_text_8: autoDraw = True
+49.8796 	EXP 	TutArrowTop: autoDraw = True
+49.8796 	EXP 	TutArrowBottom: autoDraw = True
+50.8053 	DATA 	Keypress: space
+50.8103 	EXP 	Tutbackdrop_2: autoDraw = False
+50.8103 	EXP 	instruct_text_7: autoDraw = False
+50.8103 	EXP 	instruct_text_8: autoDraw = False
+50.8103 	EXP 	TutArrowTop: autoDraw = False
+50.8103 	EXP 	TutArrowBottom: autoDraw = False
+50.8103 	EXP 	Tutbackdrop_3: autoDraw = True
+50.8103 	EXP 	instruct_text_9: autoDraw = True
+50.8103 	EXP 	instruct_text_10: autoDraw = True
+50.8103 	EXP 	TutArrowTop_2: autoDraw = True
+50.8103 	EXP 	TutArrowBottom_2: autoDraw = True
+51.5855 	DATA 	Keypress: space
+51.5907 	EXP 	Tutbackdrop_3: autoDraw = False
+51.5907 	EXP 	instruct_text_9: autoDraw = False
+51.5907 	EXP 	instruct_text_10: autoDraw = False
+51.5907 	EXP 	TutArrowTop_2: autoDraw = False
+51.5907 	EXP 	TutArrowBottom_2: autoDraw = False
+51.5907 	EXP 	Tutbackdrop_5: autoDraw = True
+51.5907 	EXP 	instruct_text_11: autoDraw = True
+51.5907 	EXP 	instruct_text_12: autoDraw = True
+51.5907 	EXP 	TutArrowTop_3: autoDraw = True
+52.8338 	DATA 	Keypress: space
+52.8396 	EXP 	Tutbackdrop_5: autoDraw = False
+52.8396 	EXP 	instruct_text_11: autoDraw = False
+52.8396 	EXP 	instruct_text_12: autoDraw = False
+52.8396 	EXP 	TutArrowTop_3: autoDraw = False
+52.8396 	EXP 	text: autoDraw = True
+52.8396 	EXP 	text_2: autoDraw = True
+53.7013 	DATA 	Keypress: space
+53.7070 	EXP 	text: autoDraw = False
+53.7070 	EXP 	text_2: autoDraw = False
+53.7070 	EXP 	instruct_text_13: autoDraw = True
+53.7070 	EXP 	instruct_text_14: autoDraw = True
+54.6863 	EXP 	Imported Tymula ConditionsModded.xlsx as conditions, 160 conditions, 12 params
+54.6871 	EXP 	Created sequence: random, trialTypes=160, nReps=1, seed=None
+54.6876 	EXP 	New trial (rep=0, index=0): OrderedDict([('Sure', 8), ('OptionOne', 8), ('OptionTwo', 0), ('Risk', 25), ('Risk2', 75), ('AmbiguityBarH', 0.0), ('Ambiguity', 0), ('SureXPos', 0.5), ('RiskXPos', -0.5), ('OptionOneXPos', -0.5), ('OptionTwoXPos', -0.5), ('RiskX', -0.5)])
+54.7521 	DATA 	Keypress: space
+54.7555 	EXP 	instruct_text_13: autoDraw = False
+54.7555 	EXP 	instruct_text_14: autoDraw = False
+54.7555 	EXP 	Red_Square: pos = array([-0.5  ,  0.165])
+54.7555 	EXP 	Blue_Square: pos = array([-0.5  , -0.165])
+54.7555 	EXP 	sure: pos = array([0.5, 0. ])
+54.7555 	EXP 	sure: text = 8
+54.7555 	EXP 	Option_One: pos = array([-0.5,  0.4])
+54.7555 	EXP 	Option_One: text = 8
+54.7555 	EXP 	Option_Two: pos = array([-0.5, -0.4])
+54.7555 	EXP 	Option_Two: text = 0
+54.7555 	EXP 	Risk_Text_Top: pos = array([-0.5 ,  0.28])
+54.7555 	EXP 	Risk_Text_Top: text = 25
+54.7555 	EXP 	Risk_Text_Bottom: pos = array([-0.5 , -0.28])
+54.7555 	EXP 	Risk_Text_Bottom: text = 75
+54.7555 	EXP 	Ambiguity_Bar: pos = array([-0.5,  0. ])
+54.7555 	EXP 	Ambiguity_Bar: size = array([0.42, 0.  ])
+54.7555 	EXP 	Red_Square: autoDraw = True
+54.7555 	EXP 	Blue_Square: autoDraw = True
+54.7555 	EXP 	sure: autoDraw = True
+54.7555 	EXP 	or_text: autoDraw = True
+54.7555 	EXP 	Option_One: autoDraw = True
+54.7555 	EXP 	Option_Two: autoDraw = True
+54.7555 	EXP 	Risk_Text_Top: autoDraw = True
+54.7555 	EXP 	Risk_Text_Bottom: autoDraw = True
+54.7555 	EXP 	Ambiguity_Bar: autoDraw = True
+57.7651 	DATA 	Keypress: escape
+58.0182 	EXP 	window1: mouseVisible = True
