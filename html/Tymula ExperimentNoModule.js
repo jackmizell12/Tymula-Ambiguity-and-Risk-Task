@@ -139,7 +139,6 @@ var Ambiguity_Bar;
 var endscreenClock;
 var endscreen_keys;
 var endscreen_text;
-var finalscore_text;
 var globalClock;
 var routineTimer;
 function experimentInit() {
@@ -279,7 +278,7 @@ function experimentInit() {
   TutArrowTop = new visual.ImageStim({
     win : psychoJS.window,
     name : 'TutArrowTop', units : undefined, 
-    image : 'TutorialArrow', mask : undefined,
+    image : 'TutorialArrow.png', mask : undefined,
     ori : 0, pos : [0.15, 0.4], size : [0.1, 0.1],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
@@ -288,7 +287,7 @@ function experimentInit() {
   TutArrowBottom = new visual.ImageStim({
     win : psychoJS.window,
     name : 'TutArrowBottom', units : undefined, 
-    image : 'TutorialArrow', mask : undefined,
+    image : 'TutorialArrow.png', mask : undefined,
     ori : 0, pos : [0.15, (- 0.4)], size : [0.1, 0.1],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
@@ -332,7 +331,7 @@ function experimentInit() {
   TutArrowTop_2 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'TutArrowTop_2', units : undefined, 
-    image : 'TutorialArrow', mask : undefined,
+    image : 'TutorialArrow.png', mask : undefined,
     ori : 0, pos : [0.15, 0.28], size : [0.1, 0.1],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
@@ -341,7 +340,7 @@ function experimentInit() {
   TutArrowBottom_2 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'TutArrowBottom_2', units : undefined, 
-    image : 'TutorialArrow', mask : undefined,
+    image : 'TutorialArrow.png', mask : undefined,
     ori : 0, pos : [0.15, (- 0.28)], size : [0.1, 0.1],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
@@ -385,7 +384,7 @@ function experimentInit() {
   TutArrowTop_3 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'TutArrowTop_3', units : undefined, 
-    image : 'TutorialArrow', mask : undefined,
+    image : 'TutorialArrow.png', mask : undefined,
     ori : 0, pos : [0.15, 0], size : [0.1, 0.1],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
@@ -521,23 +520,12 @@ function experimentInit() {
   endscreen_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'endscreen_text',
-    text: 'Thank you for participating!\n\nPlease notify the experiment runner that you have completed this portion.',
+    text: 'Thank you for participating! Press q to finish!\n\n',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0.25], height: 0.05,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -1.0 
-  });
-  
-  finalscore_text = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'finalscore_text',
-    text: 'score',
-    font: 'Arial',
-    units : undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
-    depth: -2.0 
   });
   
   // Create some handy timers
@@ -1699,7 +1687,6 @@ function endscreenRoutineBegin() {
   endscreenComponents = [];
   endscreenComponents.push(endscreen_keys);
   endscreenComponents.push(endscreen_text);
-  endscreenComponents.push(finalscore_text);
   
   endscreenComponents.forEach( function(thisComponent) {
     if ('status' in thisComponent)
@@ -1750,15 +1737,6 @@ function endscreenRoutineEachFrame() {
     endscreen_text.tStart = t;  // (not accounting for frame time here)
     endscreen_text.frameNStart = frameN;  // exact frame index
     endscreen_text.setAutoDraw(true);
-  }
-
-  
-  // *finalscore_text* updates
-  if (t >= 0.0 && finalscore_text.status === PsychoJS.Status.NOT_STARTED) {
-    // keep track of start time/frame for later
-    finalscore_text.tStart = t;  // (not accounting for frame time here)
-    finalscore_text.frameNStart = frameN;  // exact frame index
-    finalscore_text.setAutoDraw(true);
   }
 
   // check for quit (typically the Esc key)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on June 23, 2020, at 07:56
+    on June 23, 2020, at 08:22
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -175,7 +175,7 @@ instruct_text_8 = visual.TextStim(win=win, name='instruct_text_8',
 TutArrowTop = visual.ImageStim(
     win=win,
     name='TutArrowTop', 
-    image='TutorialArrow', mask=None,
+    image='TutorialArrow.png', mask=None,
     ori=0, pos=(0.15, 0.4), size=(0.1, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -183,7 +183,7 @@ TutArrowTop = visual.ImageStim(
 TutArrowBottom = visual.ImageStim(
     win=win,
     name='TutArrowBottom', 
-    image='TutorialArrow', mask=None,
+    image='TutorialArrow.png', mask=None,
     ori=0, pos=(0.15, -0.4), size=(0.1, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -217,7 +217,7 @@ instruct_text_10 = visual.TextStim(win=win, name='instruct_text_10',
 TutArrowTop_2 = visual.ImageStim(
     win=win,
     name='TutArrowTop_2', 
-    image='TutorialArrow', mask=None,
+    image='TutorialArrow.png', mask=None,
     ori=0, pos=(0.15, 0.28), size=(0.1, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -225,7 +225,7 @@ TutArrowTop_2 = visual.ImageStim(
 TutArrowBottom_2 = visual.ImageStim(
     win=win,
     name='TutArrowBottom_2', 
-    image='TutorialArrow', mask=None,
+    image='TutorialArrow.png', mask=None,
     ori=0, pos=(0.15, -0.28), size=(0.1, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -269,7 +269,7 @@ TutArrowTop_3 = visual.ImageStim(
 instruct_7Clock = core.Clock()
 instruct_7_keys = keyboard.Keyboard()
 instruct_text_13 = visual.TextStim(win=win, name='instruct_text_13',
-    text='To choose between the right and left choices use the right and left arrow keys.\nGood luck!',
+    text=' You will get a bonus based on the points you earned from 3 random trials in the game. So choose wisely. you made.\nTo choose between the right and left choices use the right and left arrow keys.\nGood luck!',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
