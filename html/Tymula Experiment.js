@@ -25,7 +25,7 @@ psychoJS.openWindow({
 
 // store info about the experiment session:
 let expName = 'Tymula Experiment';  // from the Builder filename that created this script
-let expInfo = {'passcode': ''};
+let expInfo = {'participant': ''};
 
 // schedule the experiment:
 psychoJS.schedule(psychoJS.gui.DlgFromDict({

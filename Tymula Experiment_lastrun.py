@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on June 23, 2020, at 08:22
+    on June 23, 2020, at 08:31
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '3.2.3'
 expName = 'Tymula Experiment'  # from the Builder filename that created this script
-expInfo = {'passcode': ''}
+expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -259,7 +259,7 @@ instruct_text_12 = visual.TextStim(win=win, name='instruct_text_12',
 TutArrowTop_3 = visual.ImageStim(
     win=win,
     name='TutArrowTop_3', 
-    image='TutorialArrow', mask=None,
+    image='TutorialArrow.png', mask=None,
     ori=0, pos=(0.15, 0), size=(0.1, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -354,19 +354,12 @@ Ambiguity_Bar = visual.Rect(
 endscreenClock = core.Clock()
 endscreen_keys = keyboard.Keyboard()
 endscreen_text = visual.TextStim(win=win, name='endscreen_text',
-    text='Thank you for participating!\n\nPlease notify the experiment runner that you have completed this portion.',
+    text='Thank you for participating! Press q to finish!\n\n',
     font='Arial',
     pos=(0, 0.25), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-finalscore_text = visual.TextStim(win=win, name='finalscore_text',
-    text='score',
-    font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -1391,7 +1384,7 @@ for thisTrial in trials:
 endscreen_keys.keys = []
 endscreen_keys.rt = []
 # keep track of which components have finished
-endscreenComponents = [endscreen_keys, endscreen_text, finalscore_text]
+endscreenComponents = [endscreen_keys, endscreen_text]
 for thisComponent in endscreenComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -1446,15 +1439,6 @@ while continueRoutine:
         win.timeOnFlip(endscreen_text, 'tStartRefresh')  # time at next scr refresh
         endscreen_text.setAutoDraw(True)
     
-    # *finalscore_text* updates
-    if finalscore_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        finalscore_text.frameNStart = frameN  # exact frame index
-        finalscore_text.tStart = t  # local t and not account for scr refresh
-        finalscore_text.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(finalscore_text, 'tStartRefresh')  # time at next scr refresh
-        finalscore_text.setAutoDraw(True)
-    
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
@@ -1478,8 +1462,6 @@ for thisComponent in endscreenComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('endscreen_text.started', endscreen_text.tStartRefresh)
 thisExp.addData('endscreen_text.stopped', endscreen_text.tStopRefresh)
-thisExp.addData('finalscore_text.started', finalscore_text.tStartRefresh)
-thisExp.addData('finalscore_text.stopped', finalscore_text.tStopRefresh)
 # the Routine "endscreen" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
