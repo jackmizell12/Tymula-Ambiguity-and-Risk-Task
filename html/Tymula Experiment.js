@@ -426,7 +426,7 @@ function experimentInit() {
     text: 'Press spacebar to continue',
     font: 'Arial',
     units : undefined, 
-    pos: [0, (- 0.04)], height: 0.05,  wrapWidth: undefined, ori: 0,
+    pos: [0, (- 0.4)], height: 0.05,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -2.0 
   });

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on June 23, 2020, at 10:04
+    on June 24, 2020, at 09:10
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -278,7 +278,7 @@ text = visual.TextStim(win=win, name='text',
 text_2 = visual.TextStim(win=win, name='text_2',
     text='Press spacebar to continue',
     font='Arial',
-    pos=(0, -.04), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0, -.4), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
