@@ -1,0 +1,11 @@
+key_resp_2.keys,key_resp_2.rt,key_resp.keys,key_resp.rt,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,Sure,OptionOne,OptionTwo,Risk,Risk2,AmbiguityBarH,Ambiguity,SureXPos,RiskXPos,OptionOneXPos,OptionTwoXPos,RiskX,participant,date,expName,psychopyVersion,OS,frameRate
+space,8.250000238,right,25.57800007,1,0,160,135,1,159,125,125,0,13,13,0.481,74,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,left,11.29399991,1,0,160,125,1,159,-50,-50,0,38,38,0.156,24,0.5,-0.5,-0.5,-0.5,-0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,right,9.947999954,1,0,160,25,1,159,-5,-5,0,25,75,0,0,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,left,18.39899993,1,0,160,145,1,159,-125,-125,0,25,75,0,0,0.5,-0.5,-0.5,-0.5,-0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,right,17.23900008,1,0,160,139,1,159,125,125,0,50,50,0,0,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,right,5.934000015,1,0,160,122,1,159,-50,-50,0,38,62,0,0,0.5,-0.5,-0.5,-0.5,-0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,right,6.167000055,1,0,160,50,1,159,-8,-8,0,38,62,0,0,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,left,5.946000099,1,0,160,116,1,159,-50,-50,0,75,25,0,0,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,right,8.392000198,1,0,160,112,1,159,-50,-50,0,13,87,0,0,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
+,,right,5.387000084,1,0,160,23,1,159,-5,-5,0,13,13,0.481,74,-0.5,0.5,0.5,0.5,0.5,Sharon Fink,2020-07-31_11h43.24.101,Tymula Experiment,3.2.3,Win32,60
